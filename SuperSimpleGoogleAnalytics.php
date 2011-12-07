@@ -37,7 +37,7 @@ function ssga_options_do_page() {
 					<td><input name="ssga_item[insertcode]" type="checkbox" value="1" <?php checked('1', $options['insertcode']); ?> /></td>
 				</tr>
 				<tr valign="top"><th scope="row">Google Analytics Numbers:</th>
-					<td>UA-<input type="text" name="ssga_item[sometext1]" value="<?php echo $options['sometext1']; ?>" style="width:90px;" maxlength="6" />-<input type="text" name="ssga_item[sometext2]" value="<?php echo $options['sometext2']; ?>" style="width:30px;" maxlength="2" /></td>
+					<td>UA-<input type="text" name="ssga_item[sometext1]" value="<?php echo $options['sometext1']; ?>" style="width:90px;" maxlength="8" />-<input type="text" name="ssga_item[sometext2]" value="<?php echo $options['sometext2']; ?>" style="width:30px;" maxlength="2" /></td>
 				</tr>
 			</table>
 			<p class="submit">
