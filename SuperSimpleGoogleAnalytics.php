@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Super Simple Google Analytics
-Plugin URI: http://wikiduh.com/plugin/wp/simple_analytics
+Plugin URI: http://wikiduh.com/plugins/super-simple-google-analytics
 Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without fuss.
 Version: 1.1
 Author: bitacre
