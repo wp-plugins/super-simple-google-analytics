@@ -1,5 +1,5 @@
 === Super Simple Google Analytics ===
-Plugin URI: http://wikiduh.com/plugin/wp/simple_analytics
+Plugin URI: http://wikiduh.com/plugins/super-simple-google-analytics
 Contributors: bitacre
 Donate link: http://wikiduh.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, inject, javascript, google analytics
