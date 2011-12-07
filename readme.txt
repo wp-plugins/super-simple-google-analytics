@@ -35,22 +35,22 @@ Probably not, I'm trying to keep this as simple as possible.
 
 == Changelog ==
 
+= 1.1 =
+* Fixed maxlength of 1st box from 6 to 8 characters.
+
 = 1.0 =
 * First released version. 
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.1 =
 
-First release, no upgrade notice (included to make the WordPress readme.txt validator happy).
+Allows users with longer GA numbers to use the plugin.
 
-== Resources ==
+== Support ==
 
-* [Plugin Homepage](http://wikiduh.com/plugin/wp/simple_analytics)
-* [Plugin Directory](http://wordpress.org/extend/plugins/super-simple-google-analytics/)
-* [Plugin Support](http://codex.wordpress.org/User_talk:Bitacre#Super_Simple_Google_Analytics)
-* [Author Codex](http://codex.wordpress.org/User:Bitacre)
+* [Plugin Homepage](http://wikiduh.com/plugins/super-simple-google-analytics)
 * [plugins@wikiduh.com](mailto:plugins@wikiduh.com)
 
 == Donations ==
