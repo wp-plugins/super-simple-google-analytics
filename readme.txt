@@ -1,0 +1,58 @@
+=== Super Simple Google Analytics ===
+Plugin URI: http://wikiduh.com/plugin/wp/simple_analytics
+Contributors: bitacre
+Donate link: http://wikiduh.com/donate
+Tags: google, analytics, simple, works, tracking, code, head, header, insert, inject, javascript, google analytics
+Requires at least: 2.8
+Tested up to: 3.2.1
+Stable tag: 1.0
+
+Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
+
+== Description ==
+
+This is a bare bones option for people who are looking to simply insert the basic Google Analytics tracking code into the head section of every page. 
+
+No crazy options, not very exciting, but works reliably.
+
+== Installation ==
+
+1. Download the latest zip file and extract the `'super-simple-google-analytics'` directory.
+2. Upload the this directory inside your `'/wp-content/plugins/'` directory.
+3. Activate 'Super Simple Google Analytics' on the 'Plugins' menu in WordPress.
+4. Navigate to Settings > Google Analytics and insert your GA tracking code and click the checkbox to turn it on.
+5. That's it.
+
+== Frequently Asked Questions ==
+
+= Can you add this feature I just thought of? =
+
+Probably not, I'm trying to keep this as simple as possible.
+
+== Screenshots ==
+
+1. The bare bones options page.
+
+== Changelog ==
+
+= 1.0 =
+* First released version. 
+* There may still be bugs, but I can't find any. 
+
+== Upgrade Notice ==
+
+= 1.0 =
+
+First release, no upgrade notice (included to make the WordPress readme.txt validator happy).
+
+== Resources ==
+
+* [Plugin Homepage](http://wikiduh.com/plugin/wp/simple_analytics)
+* [Plugin Directory](http://wordpress.org/extend/plugins/super-simple-google-analytics/)
+* [Plugin Support](http://codex.wordpress.org/User_talk:Bitacre#Super_Simple_Google_Analytics)
+* [Author Codex](http://codex.wordpress.org/User:Bitacre)
+* [plugins@wikiduh.com](mailto:plugins@wikiduh.com)
+
+== Donations ==
+
+[Donations](http://wikiduh.com/donations) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Alertpay, Paypal, and kind words.
