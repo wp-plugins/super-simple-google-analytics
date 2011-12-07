@@ -17,8 +17,8 @@ No crazy options, not very exciting, but works reliably.
 
 == Installation ==
 
-1. Download the latest zip file and extract the `'super-simple-google-analytics'` directory.
-2. Upload the this directory inside your `'/wp-content/plugins/'` directory.
+1. Download the latest zip file and extract the `super-simple-google-analytics` directory.
+2. Upload the this directory inside your `/wp-content/plugins/` directory.
 3. Activate 'Super Simple Google Analytics' on the 'Plugins' menu in WordPress.
 4. Navigate to Settings > Google Analytics and insert your GA tracking code and click the checkbox to turn it on.
 5. That's it.
@@ -36,7 +36,7 @@ Probably not, I'm trying to keep this as simple as possible.
 == Changelog ==
 
 = 1.1 =
-* Fixed maxlength of 1st box from 6 to 8 characters.
+* Fixed maxlength of 1st box (from 6 to 8 characters).
 
 = 1.0 =
 * First released version. 
@@ -48,12 +48,9 @@ Probably not, I'm trying to keep this as simple as possible.
 
 Allows users with longer GA numbers to use the plugin.
 
-== Resources ==
+== Support ==
 
-* [Plugin Homepage](http://wikiduh.com/plugin/wp/simple_analytics)
-* [Plugin Directory](http://wordpress.org/extend/plugins/super-simple-google-analytics/)
-* [Plugin Support](http://codex.wordpress.org/User_talk:Bitacre#Super_Simple_Google_Analytics)
-* [Author Codex](http://codex.wordpress.org/User:Bitacre)
+* [Plugin Homepage](http://wikiduh.com/plugins/super-simple-google-analytics)
 * [plugins@wikiduh.com](mailto:plugins@wikiduh.com)
 
 == Donations ==
