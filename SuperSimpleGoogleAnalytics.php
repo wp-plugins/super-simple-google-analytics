@@ -62,7 +62,7 @@ function ssga_options_validate($input) {
 function wp_print_GAcode() { // code to run on wp_head
 	$options = get_option('ssga_item');
 	if($options['insertcode']) {
-		$gacode =  "<!-- Super Simple Google Analytics tracking code -->
+		$gacode =  "<!-- Google Analytics tracking code. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->
 		<script type='text/javascript'>
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-" . $options['sometext1'] . "-" . $options['sometext2'] . "']);
@@ -75,7 +75,7 @@ _gaq.push(['_trackPageview']);
 })();
 </script>";
 	echo $gacode;}
-	else echo "<!-- Super Simple Google Analytics is currently disabled -->";
+	else echo "<!-- Super Simple Google Analytics is currently disabled. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->";
 }
 
 add_action('wp_head', 'wp_print_GAcode'); ?>
