@@ -5,7 +5,7 @@ Donate link: http://wikiduh.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, inject, javascript, google analytics
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
 
@@ -35,6 +35,10 @@ Probably not, I'm trying to keep this as simple as possible.
 
 == Changelog ==
 
+= 1.2 =
+* Added a `Settings` link directly to the plugins page for convenience.
+* Changed maxlength of 2nd box to 3 characters (since someone might have more than 99 sites on the same Analytics account).
+
 = 1.1 =
 * Fixed maxlength of 1st box (from 6 to 8 characters).
 
@@ -43,6 +47,9 @@ Probably not, I'm trying to keep this as simple as possible.
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+
+= 1.2
+Not a critical update, added setting link to plugins page for convenience. 
 
 = 1.1 =
 
