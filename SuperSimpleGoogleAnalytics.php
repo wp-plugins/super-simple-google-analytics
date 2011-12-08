@@ -77,7 +77,7 @@ function wp_print_GAcode() { // code to run on wp_head
 	$options = get_option('ssga_item');
 	if($options['insertcode']) {
 		$gacode =  "<!-- Google Analytics tracking code. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->
-		<script type='text/javascript'>
+<script type='text/javascript'>
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-" . $options['sometext1'] . "-" . $options['sometext2'] . "']);
 _gaq.push(['_trackPageview']);
@@ -87,7 +87,8 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-</script>";
+</script>
+";
 	echo $gacode;}
 	else echo "<!-- Super Simple Google Analytics is currently disabled. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->";
 }
