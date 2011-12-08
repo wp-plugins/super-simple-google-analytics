@@ -20,7 +20,7 @@ No crazy options, not very exciting, but works reliably.
 1. Download the latest zip file and extract the `super-simple-google-analytics` directory.
 2. Upload the this directory inside your `/wp-content/plugins/` directory.
 3. Activate 'Super Simple Google Analytics' on the 'Plugins' menu in WordPress.
-4. Navigate to Settings > Google Analytics and insert your GA tracking code and click the checkbox to turn it on.
+4. Click 'Settings' underneath the plugin or navigate to Settings > Google Analytics and insert your GA tracking code and click the checkbox to turn it on.
 5. That's it.
 
 == Frequently Asked Questions ==
