@@ -41,7 +41,8 @@ function ssga_options_add_page() {
 function ssga_options_do_page() {
 	?>
 	<div class="wrap">
-		<h2 style="text-align:center;">Super Simple Google Analytics Settings</h2>
+    <div class="icon32" id="icon-options-general"><br /></div>
+		<h2>Super Simple Google Analytics Settings</h2>
 		<form method="post" action="options.php">
 			<?php settings_fields('ssga_options_options'); ?>
 			<?php $options = get_option('ssga_item'); ?>
