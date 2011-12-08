@@ -50,7 +50,7 @@ Probably not, I'm trying to keep this as simple as possible.
 
 == Upgrade Notice ==
 
-= 1.2
+= 1.2 =
 Not a critical update, added setting link to plugins page for convenience. 
 
 = 1.1 =
