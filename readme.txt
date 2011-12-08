@@ -32,6 +32,7 @@ Probably not, I'm trying to keep this as simple as possible.
 == Screenshots ==
 
 1. The bare bones options page.
+2. Where to find your Google Analytics account number.
 
 == Changelog ==
 
