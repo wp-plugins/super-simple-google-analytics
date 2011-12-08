@@ -37,7 +37,8 @@ Probably not, I'm trying to keep this as simple as possible.
 == Changelog ==
 
 = 1.2 =
-* Added a `Settings` link directly to the plugins page for convenience.
+* Added a Settings link directly to the plugins page for convenience.
+* Made the Settings page look more normal.
 * Changed maxlength of 2nd box to 3 characters (since someone might have more than 99 sites on the same Analytics account).
 
 = 1.1 =
