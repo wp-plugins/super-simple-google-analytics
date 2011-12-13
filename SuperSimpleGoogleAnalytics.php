@@ -90,7 +90,8 @@ _gaq.push(['_trackPageview']);
 </script>
 ";
 	echo $gacode;}
-	else echo "<!-- Super Simple Google Analytics is currently disabled. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->";
+	else echo "<!-- Super Simple Google Analytics is currently disabled. Plugin URL: http://wikiduh.com/plugins/super-simple-google-analytics -->
+	";
 }
 
 add_action('wp_head', 'wp_print_GAcode'); ?>
