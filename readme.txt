@@ -36,6 +36,10 @@ Probably not, I'm trying to keep this as simple as possible.
 
 == Changelog ==
 
+= 1.3 =
+* Added default values function for people doing multiple installations.
+* Clarified code commenting.
+
 = 1.2 =
 * Added a Settings link directly to the plugins page for convenience.
 * Made the Settings page look more normal.
@@ -49,6 +53,9 @@ Probably not, I'm trying to keep this as simple as possible.
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+
+= 1.3 =
+Not a critical update, added hardcoded defaults for people doing multiple installations.
 
 = 1.2 =
 Not a critical update, added setting link to plugins page for convenience. 
