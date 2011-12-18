@@ -37,8 +37,9 @@ Probably not, I'm trying to keep this as simple as possible.
 == Changelog ==
 
 = 1.3 =
-* Added default values function for people doing multiple installations.
-* Clarified code commenting.
+* Added a 'default values' function for people doing multiple installations.
+* Clarified/additional code commenting.
+* Fixed weird line break printing in HTML source.
 
 = 1.2 =
 * Added a Settings link directly to the plugins page for convenience.
@@ -55,10 +56,10 @@ Probably not, I'm trying to keep this as simple as possible.
 == Upgrade Notice ==
 
 = 1.3 =
-Not a critical update, added hardcoded defaults for people doing multiple installations.
+Not a critical update, adds hardcoded defaults and fixes html line breaks.
 
 = 1.2 =
-Not a critical update, added setting link to plugins page for convenience. 
+Not a critical update, adds setting link to plugins page for convenience. 
 
 = 1.1 =
 

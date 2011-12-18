@@ -11,7 +11,7 @@ License: GPLv2
 */
 
 /* FUNCTIONS */
-function set_defaults($option_array_name = 'ssga_item') { // insert default values for first initialization (DON'T change unless you know what you're doing)
+function set_defaults($option_array_name = 'ssga_item') { // insert default values for first initialization (99% of users won't need to change this)
 	if(!get_option($option_array_name)) { // if option doesn't exist yet:
 		$defaultvars = array( // set defaults in array
 			'sometext1' => '', // first part of tracking code
