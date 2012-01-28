@@ -2,7 +2,7 @@
 Plugin URI: http://wikiduh.com/plugins/super-simple-google-analytics
 Contributors: bitacre
 Donate link: http://wikiduh.com/donate
-Tags: google, analytics, simple, works, tracking, code, head, header, insert, inject, javascript, google analytics
+Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
 Tested up to: 3.3
 Stable tag: 1.3
