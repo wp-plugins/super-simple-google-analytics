@@ -62,7 +62,6 @@ Not a critical update, adds hardcoded defaults and fixes html line breaks.
 Not a critical update, adds setting link to plugins page for convenience. 
 
 = 1.1 =
-
 Allows users with longer GA numbers to use the plugin.
 
 == Support ==
