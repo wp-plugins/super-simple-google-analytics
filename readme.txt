@@ -4,7 +4,7 @@ Contributors: bitacre
 Donate link: http://wikiduh.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
-Tested up to: 3.3
+Tested up to: 3.3.1
 Stable tag: 1.3
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
@@ -72,4 +72,4 @@ Allows users with longer GA numbers to use the plugin.
 
 == Donations ==
 
-[Donations](http://wikiduh.com/donations) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Alertpay, Paypal, and kind words.
+[Donations](http://wikiduh.com/donations) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Paypal and kind words.
