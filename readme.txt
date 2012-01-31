@@ -71,4 +71,4 @@ Allows users with longer GA numbers to use the plugin.
 
 == Donations ==
 
-[Donations](http://wikiduh.com/donations) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Paypal and kind words.
+[Donations](http://wikiduh.com/donate) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Paypal and kind words.
