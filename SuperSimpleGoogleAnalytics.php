@@ -3,7 +3,7 @@
 Plugin Name: Super Simple Google Analytics
 Plugin URI: http://wikiduh.com/plugins/super-simple-google-analytics
 Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without fuss.
-Version: 1.3.1
+Version: 1.3.2
 Author: bitacre
 Author URI: http://wikiduh.com
 License: GPLv2 
@@ -96,7 +96,7 @@ _gaq.push(['_trackPageview']);
 } 
 
 /* HOOKS AND FILTERS */
-add_filter( 'plugin_row_meta', '_super_simple_google_analytics', 10, 2 ); // add meta links to plugin's section on 'plugins' page (10=priority, 2=num of args)
+add_filter( 'plugin_row_meta', 'set_plugin_meta_super_simple_google_analytics', 10, 2 ); // add meta links to plugin's section on 'plugins' page (10=priority, 2=num of args)
 add_action('admin_init', 'ssga_options_init' ); // add plugin's options to white list on admin initialization
 add_action('admin_init', 'set_defaults' ); // add plugin's options to white list on admin initialization
 add_action('admin_menu', 'ssga_options_add_page'); // add link to plugin's settings page in 'settings' menu on admin menu initilization
