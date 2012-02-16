@@ -35,6 +35,8 @@ Probably not, I'm trying to keep this as simple as possible.
 2. Where to find your Google Analytics account number.
 
 == Changelog ==
+= 1.3.2 =
+* Fixed typo introduced in 1.3.1 update which can disrupt plugin meta links and throw an error in some situations.
 
 = 1.3.1 =
 * Fixed Settings link using generic function name which might prevent plugin from being activated.
