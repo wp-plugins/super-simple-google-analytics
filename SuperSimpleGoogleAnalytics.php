@@ -3,7 +3,7 @@
 Plugin Name: Super Simple Google Analytics
 Plugin URI: http://wikiduh.com/plugins/super-simple-google-analytics
 Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without fuss.
-Version: 1.4
+Version: 1.4.1
 Author: bitacre
 Author URI: http://wikiduh.com
 License: GPLv2 
@@ -145,7 +145,7 @@ Google Analytics Tracking Code
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push([\'_setAccount\', \'UA-' . $options['account'] . '-' . $options['profile'] . ']);
+  _gaq.push([\'_setAccount\', \'UA-' . $options['account'] . '-' . $options['profile'] . '\']);
   _gaq.push([\'_trackPageview\']);
 
   (function() {
@@ -155,7 +155,7 @@ Google Analytics Tracking Code
   })();
 
 </script>
-'; // Simple tracker code as of 29-march-2012
+'; // Simple tracker code as of 29-march-2012 (thank you Tacit Slager for finding the 1.4 bug!)
 		echo $code;
 	}
 	else echo '
