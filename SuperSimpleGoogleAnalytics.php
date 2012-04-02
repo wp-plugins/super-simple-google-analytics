@@ -50,19 +50,17 @@ function super_simple_google_analytics_remove_old() {
 	return delete_option( 'ssga_item' );
 }
 
-function super_simple_google_analytics_set_plugin_meta( $links ) {
+function super_simple_google_analytics_set_plugin_meta( $links, $file ) { 
 /*	short desc: define additional plugin meta links (appearing under plugin on Plugins page)
 	parameters:
 		$links = (array) passed from wp
-		$newlinks = (array) list of additional links
-		$file = plugin file to set meta for
-*/
-
-	$newlinks = array( '<a href="options-general.php?page=super-simple-google-analytics">Settings</a>' );
-
-	// $plugin = plugin_basename(__FILE__); // get plugin location
-    
-	return array_merge( $links, $newlinks ); // merge new links into existing $links
+		$file = (array) passed from wp*/
+	$plugin = plugin_basename( __FILE__ ); // '/nofollow/nofollow.php' by default
+    if ( $file == $plugin ) { // if called for THIS plugin then:
+		$newlinks = array( '<a href="options-general.php?page=super-simple-google-analytics">Settings</a>'	); // array of links to add
+		return array_merge( $links, $newlinks ); // merge new links into existing $links
+	}
+return $links; // return the $links (merged or otherwise)
 }
 
 function super_simple_google_analytics_options_init() { 
@@ -168,7 +166,7 @@ Insert tracking code disabled on Settings page
 } 
 
 // HOOKS AND FILTERS
-add_filter( 'plugin_row_meta', 'super_simple_google_analytics_set_plugin_meta', 10, 1 ); // add plugin page meta links
+add_filter( 'plugin_row_meta', 'super_simple_google_analytics_set_plugin_meta', 10, 2 ); // add plugin page meta links
 add_action( 'admin_init', 'super_simple_google_analytics_options_init' ); // whitelist options page
 add_action( 'admin_init', 'super_simple_google_analytics_set_defaults' ); // set default values on first run
 add_action( 'admin_init', 'super_simple_google_analytics_remove_old' ); // set default values on first run
