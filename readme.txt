@@ -5,7 +5,7 @@ Donate link: http://wikiduh.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
 Tested up to: 3.3.1
-Stable tag: 1.4.2
+Stable tag: 1.5.0
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
 
@@ -13,7 +13,7 @@ Very simple plugin for reliably inserting your Google Analytics tracking code on
 
 This is a bare bones option for people who are looking to simply insert the basic Google Analytics tracking code into the head section of every page. 
 
-No crazy options, not very exciting, but works reliably.
+I've only included the essential options; it's not very exciting, but works *reliably*.
 
 == Installation ==
 
@@ -27,7 +27,7 @@ No crazy options, not very exciting, but works reliably.
 
 = Can you add this feature I just thought of? =
 
-Probably not, I'm trying to keep this as simple as possible.
+Possibly, I'm trying to keep this as simple as possible, but if it's a really useful/uncomplicated feature that I've omitted I will definitely consider it.
 
 == Screenshots ==
 
@@ -35,6 +35,10 @@ Probably not, I'm trying to keep this as simple as possible.
 2. Where to find your Google Analytics account number.
 
 == Changelog == 
+= 1.5.0 =
+* Added a option to toggle tracking of logged in administrators.
+* Added internationalization language support.
+
 = 1.4.2 =
 * Fixed error causing population of ALL settings links on plugin menu.
 
@@ -70,6 +74,9 @@ Probably not, I'm trying to keep this as simple as possible.
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+= 1.5.0 =
+Not a critical update, adds an option to not track logged in admin accounts.
+
 = 1.4.2 =
 Critical update, may interfere with other plugins.
 
@@ -105,3 +112,5 @@ Allows users with longer GA numbers to use the plugin.
 == Donations ==
 
 [Donations](http://wikiduh.com/donate) are graciously accepted to support the continued development and maintenance of this and other plugins. We currently accept Paypal and kind words.
+
+
