@@ -33,7 +33,6 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 
 1. The bare bones options page.
 2. Where to find your Google Analytics account number.
-3. The source of the tracking code inserted before the &lt;/body&gt; tag
 
 == Changelog == 
 = 1.5.0 =
