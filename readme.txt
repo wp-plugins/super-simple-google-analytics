@@ -5,7 +5,7 @@ Donate link: http://wikiduh.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
 Tested up to: 3.3.1
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
 
@@ -36,6 +36,9 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 3. Source of the tracking code inserted just before &lt;/body&gt;.
 
 == Changelog == 
+= 1.5.1 =
+* Fixed an error causing malformed tracking code to be output.
+
 = 1.5.0 =
 * Added a option to toggle tracking of logged in administrators.
 * Added internationalization language support.
@@ -75,6 +78,9 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+= 1.5.1 =
+Very critical update, version 1.5.0 may not work properly. Thank you to Tacit Slagger for reporting this bug.
+
 = 1.5.0 =
 Not a critical update, adds an option to not track logged in admin accounts.
 

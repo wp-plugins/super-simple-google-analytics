@@ -150,6 +150,8 @@ $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' );
 function super_simple_google_analytics_print_code() { 
 // 	short desc: Google Analytics html tracking code to be inserted in header/footer
 
+	$options = get_option( 'super_simple_google_analytics_item' ); // thanks again to Tacit Slagger for catching this one!
+
 // code removed for admin
 $admin = '<!-- 
 ' . __( sprintf( 'Plugin: Super Simple Google Analytics 
@@ -198,8 +200,6 @@ Settings > Google Analytics on the Dashboard.', 'http://wikiduh.com/plugins/supe
 -->
 ';
 
-	$options = get_option( 'super_simple_google_analytics_item' );
-	
 	if( !$options['insert_code'] ) { 
 		echo $disabled; 
 		return; 
