@@ -165,7 +165,8 @@ for all users by going to Settings > Google Analytics on the Dashboard.', 'http:
 
 // Simple tracker code as of 29-march-2012 (thank you Tacit Slager for finding the 1.4 bug!)
 $code =  '
-<!-- ' . __( sprintf( 'Plugin: Super Simple Google Analytics 
+<!-- 
+' . __( sprintf( 'Plugin: Super Simple Google Analytics 
 Plugin URL: %s
 Google Analytics Tracking Code.', 'http://wikiduh.com/plugins/super-simple-google-analytics' ) ) . '
 -->
