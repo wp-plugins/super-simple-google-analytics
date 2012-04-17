@@ -212,7 +212,12 @@ Settings > Google Analytics on the Dashboard.', 'http://wikiduh.com/plugins/supe
 	}
 }
 
-
+// HOOKS AND FILTERS
+add_filter( 'plugin_row_meta', 'super_simple_google_analytics_set_plugin_meta', 10, 2 ); // add plugin page meta links
+add_action( 'admin_init', 'super_simple_google_analytics_options_init' ); // whitelist options page
+add_action( 'admin_init', 'super_simple_google_analytics_set_defaults' ); // set default values on first run
+add_action( 'admin_init', 'super_simple_google_analytics_remove_old' ); // set default values on first run
+add_action( 'admin_menu', 'super_simple_google_analytics_options_add_page' ); // add link to plugin's settings page in 'settings' menu on admin menu initilization
 
 // insert tracking code on page head initilization 
 $options = get_option( 'super_simple_google_analytics_item' );
