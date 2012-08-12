@@ -133,10 +133,10 @@ function ssGA_print_code() {
 	$plugin_url = 'http://bitacre.com/plugins/super-simple-google-analytics';
 
 // code removed for admin
-$admin = sprintf( __( '%1$s<!--%1$sPlugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$s%1$s You\'ve chosen to prevent the tracking code from being inserted on %1$spages viewed by logged-in administrators.%1$s%1$sYou can re-enable the insertion of the tracking code on all pages%1$sfor all users by going to Settings > Google Analytics on the Dashboard. %1$s-->%1$s%1$s', 'SuperSimpleGoogleAnalytics' ), "\r\n", $plugin_url );
+$admin = sprintf( '%1$s<!--%1$sPlugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$s%1$s You\'ve chosen to prevent the tracking code from being inserted on %1$spages viewed by logged-in administrators.%1$s%1$sYou can re-enable the insertion of the tracking code on all pages%1$sfor all users by going to Settings > Google Analytics on the Dashboard. %1$s-->%1$s%1$s', "\r\n", $plugin_url );
 
 // Simple tracker code as of 29-march-2012 (thank you Tacit Slager for finding the 1.4 bug!)
-$code = sprintf( __( '<!--%1$s Plugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$sGoogle Analytics Tracking Code. -->%1$s%1$s', 'SuperSimpleGoogleAnalytics' ), "\r\n", $plugin_url );
+$code = sprintf( '<!--%1$s Plugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$sGoogle Analytics Tracking Code. -->%1$s%1$s', "\r\n", $plugin_url );
 
 if( $options['adsense'] == 1 || $options['adsense'] == '1' ) 
 	$code .= sprintf( '<script type="text/javascript">%1$swindow.google_analytics_uacct = "UA-%2$s-%3$s";%1$s</script>%1$s%1$s', "\r\n", $options['account'], $options['profile'] );
@@ -145,7 +145,7 @@ $code .= sprintf( '<script type="text/javascript">%1$s%1$s%2$svar _gaq = _gaq ||
 	"\r\n", '  ', $options['account'], $options['profile'] ); 
 
 // code removed for all pages
-$disabled = sprintf( __( '<!--%1$s Plugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$sYou\'ve chosen to prevent the tracking code from being inserted on %1$sany page. %1$s%1$sYou can enable the insertion of the tracking code by going to %1$sSettings > Google Analytics on the Dashboard. -->', 'SuperSimpleGoogleAnalytics' ), "\r\n", $plugin_url );
+$disabled = sprintf( '<!--%1$s Plugin: Super Simple Google Analytics%1$sPlugin URL: %2$s%1$sYou\'ve chosen to prevent the tracking code from being inserted on %1$sany page. %1$s%1$sYou can enable the insertion of the tracking code by going to %1$sSettings > Google Analytics on the Dashboard. -->', "\r\n", $plugin_url );
 
 	if( !$options['insert_code'] ) { 
 		echo $disabled; 
