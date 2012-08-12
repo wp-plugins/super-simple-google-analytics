@@ -12,8 +12,6 @@ License: GPLv3
 
 // default plugin options
 
-error_reporting(E_ALL); ini_set('display_errors','On'); 
-
 function ssGA_default_options() { 
 	$output = array(
 		'account' => '',
@@ -170,7 +168,7 @@ function ssGA_load_textdomain() {
 add_filter( 'plugin_row_meta', 'ssGA_set_plugin_meta', 10, 2 ); // add plugin page meta links
 add_action( 'admin_init', 'ssGA_options_init' ); // whitelist options page
 add_action( 'admin_menu', 'ssGA_options_add_page' ); // add link to plugin's settings page
-add_action( 'plugins_loaded', 'ssGA_load_textdomain' ); // load i18n
+add_action( 'plugins_loaded', 'ssGA_loadtextdomain' ); // load i18n
 
 // insert tracking code on page head initilization 
 $options = get_option( 'super_simple_google_analytics_item', ssGA_default_options() );
