@@ -45,8 +45,8 @@ function ssGA_options_init() {
 
 // add link to plugin's settings page under 'settings' on the admin menu 
 function ssGA_options_add_page() { 
-	$plugin_title = __( 'Super Simple Google Analytics Settings', 'ssGA_text_domain' );
-	$menu_text = __( 'Google Analytics', 'ssGA_text_domain' );
+	$plugin_title = __( 'Super Simple Google Analytics Settings');
+	$menu_text = __( 'Google Analytics');
 	$has_cap = 'manage_options';
 	$options_url ='super-simple-google-analytics';
 	$draw_function = 'ssGA_options_do_page';
@@ -79,19 +79,19 @@ function ssGA_options_do_page() {
 			
 			<!-- Description -->
 			<p style="font-size:0.95em"><?php 
-				printf( __( 'You may post a comment on this plugin\'s %1$shomepage%2$s if you have any questions, bug reports, or feature suggestions.', 'ssGA_text_domain' ), 
+				printf( __( 'You may post a comment on this plugin\'s %1$shomepage%2$s if you have any questions, bug reports, or feature suggestions.'), 
 				'<a href="http://bitacre.com/plugins/super-simple-google-analytics" rel="help">', '</a>' ); ?></p>
 			
 			<table class="form-table">
 
-            	 <!-- <?php _e( 'Insert Tracking Code (checkbox)', 'ssGA_text_domain' ); ?> -->
+            	 <!-- <?php _e( 'Insert Tracking Code (checkbox)'); ?> -->
 <?php $insert_code_checked = ( $options['insert_code'] ? 'checked="checked" ' : '' );
 $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' ); ?>
 				<tr valign="top"><th scope="row"><label <?php echo $insert_code_style; ?>for="super_simple_google_analytics_item[insert_code]"><?php _e( 'Insert Tracking Code?' ); ?></label></th>
 					<td><input name="super_simple_google_analytics_item[insert_code]" type="checkbox" value="1" <?php echo $insert_code_checked; ?>/></td>
                 </tr>
 				 
-				 <!-- <?php _e( 'UA-numbers (text boxes)', 'ssGA_text_domain' ); ?> -->
+				 <!-- <?php _e( 'UA-numbers (text boxes)' ); ?> -->
 				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[account]"><?php _e( 'Google Analytics Numbers' ); ?>: </label></th>
 					<td>
                     	UA-<input type="text" name="super_simple_google_analytics_item[account]" value="<?php echo $options['account']; ?>" style="width:90px;" maxlength="8" />
@@ -100,26 +100,26 @@ $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' );
 				</tr>
 				
                 <!-- Head/Body insert (radio buttons) -->
-                <tr valign="top"><th scope="row" valign="middle"><label for="super_simple_google_analytics_item[location]"><?php _e( 'Insert Location', 'ssGA_text_domain' ); ?>:</label></th>
+                <tr valign="top"><th scope="row" valign="middle"><label for="super_simple_google_analytics_item[location]"><?php _e( 'Insert Location' ); ?>:</label></th>
 					<td>
 						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php _e( 'before &lt;/head&gt;', 'ssGA_text_domain'); ?><br />
-						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php _e( 'before &lt;/body&gt;', 'ssGA_text_domain' ); ?>
+						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php _e( 'before &lt;/body&gt;' ); ?>
                     </td>
                 </tr>
 
 				<!-- Track Administrator Views (checkbox) -->
-				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[track_admin]"><?php _e( 'Track Administrator Hits?', 'ssGA_text_domain' ); ?></label></th>
+				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[track_admin]"><?php _e( 'Track Administrator Hits?' ); ?></label></th>
 					<td><input name="super_simple_google_analytics_item[track_admin]" type="checkbox" value="1" <?php checked( $options['track_admin'], 1 ); ?> /></td>
                 </tr>
 				
 				<!-- Integrate Adsense) -->
-				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[adsense]"><?php _e( 'Integrate linked Adsense account?', 'ssGA_text_domain' ); ?></label></th>
+				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[adsense]"><?php _e( 'Integrate linked Adsense account?' ); ?></label></th>
 					<td><input name="super_simple_google_analytics_item[adsense]" type="checkbox" value="1" <?php checked( $options['adsense'], 1 ); ?> /></td>
                 </tr>
 				
 			</table>
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'ssGA_text_domain' ) ?>" />
+				<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ) ?>" />
 			</p>
 		</form>
 	</div>
@@ -141,7 +141,7 @@ You\'ve chosen to prevent the tracking code from being inserted on
 pages viewed by logged-in administrators. 
 
 You can re-enable the insertion of the tracking code on all pages
-for all users by going to Settings > Google Analytics on the Dashboard.', 'ssGA_text_domain' ), $plugin_url ) . '
+for all users by going to Settings > Google Analytics on the Dashboard.' ), $plugin_url ) . '
 -->
 ';
 
@@ -150,7 +150,7 @@ $code =  '
 <!-- 
 ' .  sprintf( __( 'Plugin: Super Simple Google Analytics 
 Plugin URL: %s
-Google Analytics Tracking Code.', 'ssGA_text_domain' ), $plugin_url ) . '
+Google Analytics Tracking Code.' ), $plugin_url ) . '
 -->
 ' . ( $options['adsense'] ? '<script type="text/javascript">
   window.google_analytics_uacct = "UA-' . $options['account'] . '-' . $options['profile'] . '";
@@ -180,7 +180,7 @@ You\'ve chosen to prevent the tracking code from being inserted on
 any page. 
 
 You can enable the insertion of the tracking code by going to 
-Settings > Google Analytics on the Dashboard.', 'ssGA_text_domain' ), $plugin_url ) . '
+Settings > Google Analytics on the Dashboard.'), $plugin_url ) . '
 -->
 ';
 
@@ -198,7 +198,7 @@ Settings > Google Analytics on the Dashboard.', 'ssGA_text_domain' ), $plugin_ur
 
 function ssGA_load_text_domain() {
 	$lang_dir = trailingslashit( basename(dirname(__FILE__) ) ) . 'lang';
-	load_plugin_textdomain( "ssGA_text_domain", null,  $lang_dir );
+	load_plugin_textdomain( "SuperSimpleGoogleAnalytics", false,  $lang_dir );
 }
 
 // HOOKS AND FILTERS
