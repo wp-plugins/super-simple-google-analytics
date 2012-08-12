@@ -45,7 +45,7 @@ function ssGA_options_init() {
 // add link to plugin's settings page under 'settings' on the admin menu 
 function ssGA_options_add_page() { 
 	$plugin_title = __( 'Super Simple Google Analytics Settings',  'SuperSimpleGoogleAnalytics' );
-	$menu_text = __( 'Google Analytics',  'SuperSimpleGoogleAnalytics' );
+	$menu_text = __( 'Google Analytics', 'SuperSimpleGoogleAnalytics' );
 	$has_cap = 'manage_options';
 	$options_url ='super-simple-google-analytics';
 	$draw_function = 'ssGA_options_do_page';
@@ -71,7 +71,7 @@ function ssGA_options_do_page() {
 	?>
 	<div class="wrap">
     <div class="icon32" id="icon-options-general"><br /></div>
-		<h2><?php _e( 'Super Simple Google Analytics Settings' ,  'SuperSimpleGoogleAnalytics' ); ?></h2>
+		<h2><?php _e( 'Super Simple Google Analytics Settings', 'SuperSimpleGoogleAnalytics' ); ?></h2>
 		<form name="form1" id="form1" method="post" action="options.php">
 			<?php settings_fields( 'super_simple_google_analytics_options_options' ); // nonce settings page ?>
 			<?php $options = get_option( 'super_simple_google_analytics_item', ssGA_default_options() ); // populate $options array from database ?>
@@ -90,7 +90,7 @@ $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' );
 					<td><input name="super_simple_google_analytics_item[insert_code]" type="checkbox" value="1" <?php echo $insert_code_checked; ?>/></td>
                 </tr>
 				 
-				 <!-- <?php _e( 'UA-numbers (text boxes)' ,  'SuperSimpleGoogleAnalytics' ); ?> -->
+				 <!-- <?php _e( 'UA-numbers (text boxes)',  'SuperSimpleGoogleAnalytics' ); ?> -->
 				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[account]"><?php _e( 'Google Analytics Numbers' ,  'SuperSimpleGoogleAnalytics' ); ?>: </label></th>
 					<td>
                     	UA-<input type="text" name="super_simple_google_analytics_item[account]" value="<?php echo $options['account']; ?>" style="width:90px;" maxlength="8" />
@@ -140,7 +140,7 @@ You\'ve chosen to prevent the tracking code from being inserted on
 pages viewed by logged-in administrators. 
 
 You can re-enable the insertion of the tracking code on all pages
-for all users by going to Settings > Google Analytics on the Dashboard.' ,  'SuperSimpleGoogleAnalytics' ), $plugin_url ) . '
+for all users by going to Settings > Google Analytics on the Dashboard.', 'SuperSimpleGoogleAnalytics' ), $plugin_url ) . '
 -->
 ';
 
@@ -149,7 +149,7 @@ $code =  '
 <!-- 
 ' .  sprintf( __( 'Plugin: Super Simple Google Analytics 
 Plugin URL: %s
-Google Analytics Tracking Code.' ,  'SuperSimpleGoogleAnalytics' ), $plugin_url ) . '
+Google Analytics Tracking Code.', 'SuperSimpleGoogleAnalytics' ), $plugin_url ) . '
 -->
 ' . ( $options['adsense'] ? '<script type="text/javascript">
   window.google_analytics_uacct = "UA-' . $options['account'] . '-' . $options['profile'] . '";
@@ -197,7 +197,7 @@ Settings > Google Analytics on the Dashboard.',  'SuperSimpleGoogleAnalytics' ),
 
 function ssGA_load_textdomain() {
 	$lang_dir = trailingslashit( basename(dirname(__FILE__) ) ) . 'lang';
-	load_plugin_textdomain( "SuperSimpleGoogleAnalytics", false,  $lang_dir );
+	load_plugin_textdomain( 'SuperSimpleGoogleAnalytics', false,  $lang_dir );
 }
 
 // HOOKS AND FILTERS
