@@ -144,7 +144,7 @@ $code .= sprinft( '<script type="text/javascript">%s$1%s$1%s$2var _gaq = _gaq ||
 	"\r\n", '  ', $options['account'], $options['profile'] ); 
 
 // code removed for all pages
-$disabled = sprintf( __( '<!-- Plugin: Super Simple Google Analytics%s$1Plugin URL: %s$2%s$1You\'ve chosen to prevent the tracking code from being inserted on %s$1any page. %s$1%s$1You can enable the insertion of the tracking code by going to %s$1Settings > Google Analytics on the Dashboard. -->' ), "\r\n", $plugin_url );
+$disabled = sprintf( __( '<!-- Plugin: Super Simple Google Analytics%s$1Plugin URL: %s$2%s$1You\'ve chosen to prevent the tracking code from being inserted on %s$1any page. %s$1%s$1You can enable the insertion of the tracking code by going to %s$1Settings > Google Analytics on the Dashboard. -->', 'SuperSimpleGoogleAnalytics' ), "\r\n", $plugin_url );
 
 	if( !$options['insert_code'] ) { 
 		echo $disabled; 
