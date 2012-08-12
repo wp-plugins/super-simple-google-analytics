@@ -79,8 +79,8 @@ function ssGA_options_do_page() {
 			<?php $options = get_option( 'super_simple_google_analytics_item', ssGA_default_options() ); // populate $options array from database ?>
 			
 			<!-- Description -->
-			<p style="font-size:0.95em"><?php 
-				printf( __( 'You may post a comment on this plugin\'s %1$shomepage</a> if you have any questions, bug reports, or feature suggestions.', 'SuperSimpleGoogleAnalytics' ), '<a href="http://bitacre.com/plugins/super-simple-google-analytics" rel="help">' ); ?></p>
+			<p style="font-size:0.95em">
+				You may post a comment on this plugin's <a href="http://bitacre.com/plugins/super-simple-google-analytics" rel="help">homepage</a> if you have any questions, bug reports, or feature suggestions.
 			
 			<table class="form-table">
 
