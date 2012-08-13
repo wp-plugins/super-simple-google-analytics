@@ -5,13 +5,13 @@ Donate link: http://bitacre.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
 Tested up to: 3.4.1
-Stable tag: 1.5.1
+Stable tag: 1.6
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
 
 == Description ==
 
-This is a bare bones option for people who are looking to simply insert the basic Google Analytics tracking code into the head or foot section of every page. 
+This is a bare bones option for people who are looking to simply insert the basic Google Analytics tracking code into the head section of every page. 
 
 I've only included the essential options; it's not very exciting, but works *reliably*.
 
@@ -36,9 +36,8 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 3. Source of the tracking code inserted just before &lt;/body&gt;.
 
 == Changelog == 
-= 1.6.0 =
-* Added optional Google Adsense integration
-* Added i18n translation text domains
+= 1.6 =
+* Added option to track integrated adsense stats.
 
 = 1.5.1 =
 * Fixed an error causing malformed tracking code to be output.
@@ -82,8 +81,8 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
-= 1.6.0 =
-Not a critical update. Adds language support and Adsense integration.
+= 1.6 =
+Adds the ability to track adsense stats when integrated.
 
 = 1.5.1 =
 Very critical update, version 1.5.0 may not work properly. Thank you to Tacit Slagger for reporting this bug.
