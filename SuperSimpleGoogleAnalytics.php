@@ -29,9 +29,8 @@ function ssGA_default_options() {
 function ssGA_set_plugin_meta( $links, $file ) { 
 	$plugin = plugin_basename( __FILE__ );
     if ( $file == $plugin ) { // if called for THIS plugin then:
-		$newlink = sprintf( '<a href="options-general.php?page=%1$s">%2$s</a>', 
-			'super-simple-google-analytics', __( 'Settings', 'SuperSimpleGoogleAnalytics' ) );
-		return array_merge( $links, array( $newlink ) ); // merge new links into existing $links
+		$newlink = array( '<a href="options-general.php?page=super-simple-google-analytics">' . __( 'Settings', 'SuperSimpleGoogleAnalytics' ) . '</a>' );
+		return array_merge( $links, $newlink ); // merge new links into existing $links
 	}
 	return $links; // return the $links (merged or otherwise)
 }
@@ -47,7 +46,7 @@ function ssGA_options_init() {
 // add link to plugin's settings page under 'settings' on the admin menu 
 function ssGA_options_add_page() { 
 	$plugin_title = __( 'Super Simple Google Analytics Settings', 'SuperSimpleGoogleAnalytics' );
-	$menu_text = __( 'Google Analytics', 'SuperSimpleGoogleAnalytics' );
+	$menu_text =  'Google Analytics';
 	$has_cap = 'manage_options';
 	$options_url ='super-simple-google-analytics';
 	$draw_function = 'ssGA_options_do_page';
@@ -73,7 +72,7 @@ function ssGA_options_do_page() {
 	?>
 	<div class="wrap">
     <div class="icon32" id="icon-options-general"><br /></div>
-		<h2><?php echo __( 'Super Simple Google Analytics Settings', 'SuperSimpleGoogleAnalytics' ); ?></h2>
+		<h2><?php echo 'Super Simple Google Analytics Settings'; ?></h2>
 		<form name="form1" id="form1" method="post" action="options.php">
 			<?php settings_fields( 'super_simple_google_analytics_options_options' ); // nonce settings page ?>
 			<?php $options = get_option( 'super_simple_google_analytics_item', ssGA_default_options() ); // populate $options array from database ?>
@@ -84,15 +83,15 @@ function ssGA_options_do_page() {
 			
 			<table class="form-table">
 
-            	 <!-- <?php echo __( 'Insert Tracking Code (checkbox)', 'SuperSimpleGoogleAnalytics' ); ?> -->
+            	 <!-- <?php echo  'Insert Tracking Code (checkbox)'; ?> -->
 <?php $insert_code_checked = ( $options['insert_code'] ? 'checked="checked" ' : '' );
 $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' ); ?>
-				<tr valign="top"><th scope="row"><label <?php echo $insert_code_style; ?>for="super_simple_google_analytics_item[insert_code]"><?php echo __( 'Insert Tracking Code?', 'SuperSimpleGoogleAnalytics' ); ?></label></th>
+				<tr valign="top"><th scope="row"><label <?php echo $insert_code_style; ?>for="super_simple_google_analytics_item[insert_code]"><?php echo  'Insert Tracking Code?'; ?></label></th>
 					<td><input name="super_simple_google_analytics_item[insert_code]" type="checkbox" value="1" <?php echo $insert_code_checked; ?>/></td>
                 </tr>
 				 
-				 <!-- <?php echo __( 'UA-numbers (text boxes)', 'SuperSimpleGoogleAnalytics' ); ?> -->
-				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[account]"><?php echo __( 'Google Analytics Numbers', 'SuperSimpleGoogleAnalytics' ); ?>: </label></th>
+				 <!-- <?php echo  'UA-numbers (text boxes)'; ?> -->
+				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[account]"><?php echo  'Google Analytics Numbers'; ?>: </label></th>
 					<td>
                     	UA-<input type="text" name="super_simple_google_analytics_item[account]" value="<?php echo $options['account']; ?>" style="width:90px;" maxlength="8" />
 	                    &ndash;<input type="text" name="super_simple_google_analytics_item[profile]" value="<?php echo $options['profile']; ?>" style="width:30px;" maxlength="3" />
@@ -100,26 +99,26 @@ $insert_code_style = ( !$options['insert_code'] ? 'style="color:#F00;" ' : '' );
 				</tr>
 				
                 <!-- Head/Body insert (radio buttons) -->
-                <tr valign="top"><th scope="row" valign="middle"><label for="super_simple_google_analytics_item[location]"><?php echo __( 'Insert Location', 'SuperSimpleGoogleAnalytics' ); ?>:</label></th>
+                <tr valign="top"><th scope="row" valign="middle"><label for="super_simple_google_analytics_item[location]"><?php echo  'Insert Location'; ?>:</label></th>
 					<td>
-						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php echo __( 'before &lt;/head&gt;', 'SuperSimpleGoogleAnalytics' ); ?><br />
-						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php echo __( 'before &lt;/body&gt;', 'SuperSimpleGoogleAnalytics' ); ?>
+						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php echo  'before &lt;/head&gt;'; ?><br />
+						<input name="super_simple_google_analytics_item[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> /><?php echo  'before &lt;/body&gt;'; ?>
                     </td>
                 </tr>
 
 				<!-- Track Administrator Views (checkbox) -->
-				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[track_admin]"><?php echo __( 'Track Administrator Hits?', 'SuperSimpleGoogleAnalytics' ); ?></label></th>
+				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[track_admin]"><?php echo  'Track Administrator Hits?'; ?></label></th>
 					<td><input name="super_simple_google_analytics_item[track_admin]" type="checkbox" value="1" <?php checked( $options['track_admin'], 1 ); ?> /></td>
                 </tr>
 				
 				<!-- Integrate Adsense) -->
-				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[adsense]"><?php echo __( 'Integrate linked Adsense account?', 'SuperSimpleGoogleAnalytics' ); ?></label></th>
+				<tr valign="top"><th scope="row"><label for="super_simple_google_analytics_item[adsense]"><?php echo 'Integrate linked Adsense account?'; ?></label></th>
 					<td><input name="super_simple_google_analytics_item[adsense]" type="checkbox" value="1" <?php checked( $options['adsense'], 1 ); ?> /></td>
                 </tr>
 				
 			</table>
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php echo __( 'Save Changes', 'SuperSimpleGoogleAnalytics' ) ?>" />
+				<input type="submit" class="button-primary" value="<?php echo  'Save Changes'; ?>" />
 			</p>
 		</form>
 	</div>
@@ -159,7 +158,7 @@ $disabled = sprintf( '<!--%1$s Plugin: Super Simple Google Analytics%1$sPlugin U
 	}
 }
 
-function ssGA_load_textdomain() {
+function ssGA_lang() {
 	$lang_dir = trailingslashit( basename( dirname(__FILE__) ) ) . 'lang';
 	load_plugin_textdomain( 'SuperSimpleGoogleAnalytics', false,  $lang_dir );
 }
@@ -168,7 +167,7 @@ function ssGA_load_textdomain() {
 add_filter( 'plugin_row_meta', 'ssGA_set_plugin_meta', 10, 2 ); // add plugin page meta links
 add_action( 'admin_init', 'ssGA_options_init' ); // whitelist options page
 add_action( 'admin_menu', 'ssGA_options_add_page' ); // add link to plugin's settings page
-add_action( 'plugins_loaded', 'ssGA_loadtextdomain' ); // load i18n
+add_action( 'plugins_loaded', 'ssGA_lang' ); // load i18n
 
 // insert tracking code on page head initilization 
 $options = get_option( 'super_simple_google_analytics_item', ssGA_default_options() );
