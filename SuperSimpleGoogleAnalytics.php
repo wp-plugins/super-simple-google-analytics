@@ -75,7 +75,7 @@ function super_simple_google_analytics_options_do_page() {
 			
 			<!-- Description -->
 			<p style="font-size:0.95em"><?php 
-				_e( sprintf( 'You may post a comment on this plugin\'s %1$shomepage%2$s if you have any questions, bug reports, or feature suggestions.', '<a href="http://wikiduh.com/plugins/super-simple-google-analytics" rel="help">', '</a>' ) ); ?></p>
+				_e( sprintf( 'You may post a comment on this plugin\'s %1$shomepage%2$s if you have any questions, bug reports, or feature suggestions.', '<a href="http://bitacre.com/plugins/super-simple-google-analytics" rel="help">', '</a>' ) ); ?></p>
 			
 			<table class="form-table">
 
@@ -125,7 +125,7 @@ function super_simple_google_analytics_options_do_page() {
 
 function super_simple_google_analytics_print_code() { 
 // 	short desc: Google Analytics html tracking code to be inserted in header/footer
-	$plugin_url = 'http://wikiduh.com/plugins/super-simple-google-analytics';
+	$plugin_url = 'http://bitacre.com/plugins/super-simple-google-analytics';
 	$options = get_option( 'super_simple_google_analytics_item', super_simple_google_analytics_get_defaults() ); // thanks again to Tacit Slagger for catching this one!
 
 // code removed for admin
