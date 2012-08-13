@@ -151,7 +151,7 @@ Plugin URL: ' . $plugin_url . '
 ' . ( $options['track_adsense'] ? '
 
 <script type="text/javascript">
-	window.google_analytics_uacct = "UA-' . $options['account'] . '-' . $options['profile'] . '"
+	window.google_analytics_uacct = "UA-' . $options['account'] . '-' . $options['profile'] . '";
 </script>
 
 ' : '' ) . '<script type="text/javascript">
