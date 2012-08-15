@@ -36,6 +36,11 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 3. Source of the tracking code inserted just before &lt;/body&gt;.
 
 == Changelog == 
+= 1.7 =
+* Added i18n (multi-language) support
+* Recoded plugin as PHP class
+* Added function to save options when upgrading from very old versions
+
 = 1.6 =
 * Added option to track integrated adsense stats.
 
@@ -81,8 +86,11 @@ Possibly, I'm trying to keep this as simple as possible, but if it's a really us
 * There may still be bugs, but I can't find any. 
 
 == Upgrade Notice ==
+= 1.7 =
+Not a critical update, adds i18n support and recoded as PHP class for increased stability.
+
 = 1.6 =
-Adds the ability to track adsense stats when integrated.
+Not a critical update, adds the ability to track adsense stats when integrated.
 
 = 1.5.1 =
 Very critical update, version 1.5.0 may not work properly. Thank you to Tacit Slagger for reporting this bug.
