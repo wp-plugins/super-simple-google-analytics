@@ -154,9 +154,9 @@ class superSimpleGoogleAnalytics {
 					<tr valign="top"><th scope="row" valign="middle"><label for="<?php echo $this->options_name; ?>[location]"><?php _e( 'Insert Location', $this->plugin_textdomain ); ?>:</label></th>
 						<td>
 							<input name="<?php echo $this->options_name; ?>[location]" type="radio" value="head" <?php checked( $options['location'], 'head', TRUE ); ?> />
-							<?php sprintf( 'before %1$shead%2$s tag', '&lt;/', '&gt;' ); ?><br />
+							<?php printf( 'before %1$shead%2$s tag', '&lt;/', '&gt;' ); ?><br />
 							<input name="<?php echo $this->options_name; ?>[location]" type="radio" value="body" <?php checked( $options['location'], 'body', TRUE ); ?> />
-							<?php sprintf( 'before %1$sbody%2$s tag', '&lt;/', '&gt;' ); ?>
+							<?php printf( 'before %1$sbody%2$s tag', '&lt;/', '&gt;' ); ?>
 						</td>
 					</tr>
 	
