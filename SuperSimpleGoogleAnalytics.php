@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Super Simple Google Analytics
-Plugin URI: http://bitacre.com/plugins/super-simple-google-analytics
+Plugin URI: http://shinraholdings.com/plugins/super-simple-google-analytics
 Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without fuss.
 Version: 1.7
 Author: bitacre
-Author URI: http://bitacre.com
+Author URI: http://shinraholdings.com
 License: GPLv3
 	Copyright 2012 Shinra Web Holdings (http://shinraholdings.com)
 */
@@ -14,7 +14,7 @@ class superSimpleGoogleAnalytics {
 	var $options_name = 'super_simple_google_analytics_item';
 	var $options_group = 'super_simple_google_analytics_option_option';
 	var $options_page = 'super_simple_google_analytics';
-	var $plugin_homepage = 'http://bitacre.com/plugins/super-simple-google-analytics';
+	var $plugin_homepage = 'http://shinraholdings.com/plugins/super-simple-google-analytics';
 	var $plugin_name = 'Super Simple Google Analytics';
 	var $plugin_textdomain = 'SuperSimpleGoogleAnalytics';
 
