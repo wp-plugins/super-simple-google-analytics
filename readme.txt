@@ -4,7 +4,7 @@ Contributors: bitacre
 Donate link: http://shinraholdings.com/donate
 Tags: google, analytics, simple, works, tracking, code, head, header, insert, google analytics, javascript, google analytics
 Requires at least: 2.8
-Tested up to: 3.4.1
+Tested up to: 3.4.2
 Stable tag: 1.7
 
 Very simple plugin for reliably inserting your Google Analytics tracking code on every page.
