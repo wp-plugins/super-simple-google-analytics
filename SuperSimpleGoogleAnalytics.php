@@ -2,19 +2,21 @@
 /*
 Plugin Name: Super Simple Google Analytics
 Plugin URI: http://shinraholdings.com/plugins/super-simple-google-analytics
-Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without fuss.
-Version: 1.7
+Description: Bare bones option for people looking to simply insert the basic Google Analytics tracking code into the head section of every page without any fuss.
+Version: 1.7.1
 Author: bitacre
 Author URI: http://shinraholdings.com
 License: GPLv3
 	Copyright 2012 Shinra Web Holdings (http://shinraholdings.com)
 */
+
+if( !class_exists( 'superSimpleGoogleAnalytics' ) ) : // namespace collision check
 class superSimpleGoogleAnalytics {
 	// declare globals
 	var $options_name = 'super_simple_google_analytics_item';
 	var $options_group = 'super_simple_google_analytics_option_option';
 	var $options_page = 'super_simple_google_analytics';
-	var $plugin_homepage = 'http://shinraholdings.com/plugins/super-simple-google-analytics';
+	var $plugin_homepage = 'http://shinraholdings.com/plugins/super-simple-google-analytics/';
 	var $plugin_name = 'Super Simple Google Analytics';
 	var $plugin_textdomain = 'SuperSimpleGoogleAnalytics';
 
@@ -238,6 +240,7 @@ class superSimpleGoogleAnalytics {
 		echo $header . "\n\n" . $footer . "\n\n" . $core ; 
 	}
 } // end class
+endif; // end collision check
 
 $superSimpleGoogleAnalytics_instance = new superSimpleGoogleAnalytics;
 ?>
